@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mBinding: ActivityMainBinding
     private lateinit var mToolbar: Toolbar
     lateinit var mAppDrawer: AppDrawer
-    private var test = ""
+    private var test = "test"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
