@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
     private var test = "test"
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Функция запускается один раз при создании activity
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
+        // Функция инициализирует функциональность приложения
         if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
