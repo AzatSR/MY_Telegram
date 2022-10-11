@@ -4,20 +4,32 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/bg_receiving_meassge.xml" value="0.192" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/bg_receiving_message.xml" value="0.192" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/bg_user_meassge.xml" value="0.192" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/bg_user_message.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/header.xml" value="0.1665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/ic_btn_action_menu_change_name.xml" value="0.1665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/ic_send.xml" value="0.192" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/drawable/ripple_effect.xml" value="0.1665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/activity_register.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/contact_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/frafments_contacts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_base_change.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_change_bio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_change_name.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_change_user_name.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_chats.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_contacts.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_enter_code.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_enter_phone_number.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_settings.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_single_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragments_contacts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/message_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/toolbar_info.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/menu.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/settings_action_menu.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/settings_menu_confirm.xml" value="0.25052083333333336" />
