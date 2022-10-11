@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.azat.telegramaz.R
 import com.azat.telegramaz.models.CommonModel
+import com.azat.telegramaz.ui.fragments.single_chat.SingleChatFragment
 import com.azat.telegramaz.utilits.*
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -38,17 +39,17 @@ class ContactsFragment : BaseFragment(R.layout.fragments_contacts) {
         val options = FirebaseRecyclerOptions.Builder<CommonModel>()
             .setQuery(mRefContacts, CommonModel::class.java)
             .build()
-        // Адаптер принимает данные, отображает в холдере
+        /** Адаптер принимает данные, отображает в холдере */
         mAdapter = object : FirebaseRecyclerAdapter<CommonModel, ContactsHolder>(options) {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactsHolder {
-                // запускается когда адаптер получает доступ к ViewGroup
+                /** запускается когда адаптер получает доступ к ViewGroup */
                 val view = LayoutInflater.from(parent.context)
                     .inflate(R.layout.contact_item, parent, false)
                 return ContactsHolder(view)
             }
 
-            // заполняет холдер
+            /** заполняет холдер */
             override fun onBindViewHolder(
                 holder: ContactsHolder,
                 position: Int,
