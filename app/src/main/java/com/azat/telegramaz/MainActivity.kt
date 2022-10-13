@@ -8,12 +8,11 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.azat.telegramaz.activities.RegisterActivity
 import com.azat.telegramaz.databinding.ActivityMainBinding
-import com.azat.telegramaz.ui.fragments.ChatsFragment
+import com.azat.telegramaz.ui.fragments.MainFragment
 import com.azat.telegramaz.ui.objects.AppDrawer
 import com.azat.telegramaz.utilits.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 
 
@@ -49,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            replaceFragment(ChatsFragment(), false)
+            replaceFragment(MainFragment(), false)
         } else {
             replaceActivity(RegisterActivity())
         }

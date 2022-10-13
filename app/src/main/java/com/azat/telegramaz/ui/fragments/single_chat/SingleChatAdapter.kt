@@ -1,11 +1,11 @@
 package com.azat.telegramaz.ui.fragments.single_chat
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.azat.telegramaz.R
 import com.azat.telegramaz.models.CommonModel
@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.message_item.view.*
 
 class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolder>() {
 
-    private var mlistMessageCach = emptyList<CommonModel>()
+    private var mlistMessageCach = mutableListOf<CommonModel>()
 
     class SingleChatHolder(view: View) : RecyclerView.ViewHolder(view) {
 
@@ -34,25 +34,42 @@ class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolde
     }
 
     override fun onBindViewHolder(holder: SingleChatHolder, position: Int) {
-        if (mlistMessageCach[position].from == CURRENT_UID){
+        if (mlistMessageCach[position].from == CURRENT_UID) {
             holder.blockUserMessage.visibility = View.VISIBLE
             holder.blockReceivedMessage.visibility = View.GONE
             holder.chatUserMessage.text = mlistMessageCach[position].text
-            holder.chatUserMessageTime.text = mlistMessageCach[position].timeStamp.toString().asTime()
+            holder.chatUserMessageTime.text =
+                mlistMessageCach[position].timeStamp.toString().asTime()
         } else {
             holder.blockUserMessage.visibility = View.GONE
             holder.blockReceivedMessage.visibility = View.VISIBLE
             holder.chatReceivedMessage.text = mlistMessageCach[position].text
-            holder.chatReceivedMessageTime.text = mlistMessageCach[position].timeStamp.toString().asTime()
+            holder.chatReceivedMessageTime.text =
+                mlistMessageCach[position].timeStamp.toString().asTime()
         }
     }
 
     override fun getItemCount(): Int = mlistMessageCach.size
 
-    @SuppressLint("NotifyDataSetChanged")
-    fun setList(list: List<CommonModel>){
-        mlistMessageCach = list
-        notifyDataSetChanged()
+
+    fun addItem(
+        item: CommonModel,
+        toBottom: Boolean,
+        onSuccess: () -> Unit,
+    ) {
+        if (toBottom) {
+            if (!mlistMessageCach.contains(item)) {
+                mlistMessageCach.add(item)
+                notifyItemInserted(mlistMessageCach.size)
+            }
+        } else {
+            if (!mlistMessageCach.contains(item)) {
+                mlistMessageCach.add(item)
+                mlistMessageCach.sortBy { it.timeStamp.toString() }
+                notifyItemInserted(0)
+            }
+        }
+        onSuccess()
     }
 }
 
