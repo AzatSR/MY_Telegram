@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.fragments
+package com.azat.telegramaz.ui.fragments.register
 
 
 import androidx.fragment.app.Fragment
@@ -10,7 +10,6 @@ import com.azat.telegramaz.utilits.replaceActivity
 import com.azat.telegramaz.utilits.replaceFragment
 import com.azat.telegramaz.utilits.showToast
 import com.google.firebase.FirebaseException
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_enter_phone_number.*
