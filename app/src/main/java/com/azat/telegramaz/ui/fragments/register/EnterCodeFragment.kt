@@ -4,6 +4,7 @@ import androidx.fragment.app.Fragment
 import com.azat.telegramaz.MainActivity
 import com.azat.telegramaz.R
 import com.azat.telegramaz.activities.RegisterActivity
+import com.azat.telegramaz.database.*
 import com.azat.telegramaz.utilits.*
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_enter_code.*

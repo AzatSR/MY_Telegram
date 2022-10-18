@@ -1,5 +1,7 @@
 package com.azat.telegramaz.utilits
 
+import com.azat.telegramaz.database.*
+
 enum class AppStates(val state: String) {
     ONLINE("в сети"),
     OFFLINE("был(а) недавно"),

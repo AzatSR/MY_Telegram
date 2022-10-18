@@ -11,7 +11,7 @@ import com.azat.telegramaz.R
 import com.azat.telegramaz.ui.fragments.ContactsFragment
 import com.azat.telegramaz.ui.fragments.SettingsFragment
 import com.azat.telegramaz.utilits.APP_ACTIVITY
-import com.azat.telegramaz.utilits.USER
+import com.azat.telegramaz.database.USER
 import com.azat.telegramaz.utilits.downloadAndSetImage
 import com.azat.telegramaz.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader

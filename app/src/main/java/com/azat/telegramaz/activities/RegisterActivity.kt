@@ -5,7 +5,7 @@ import android.os.Bundle
 import com.azat.telegramaz.R
 import com.azat.telegramaz.databinding.ActivityRegisterBinding
 import com.azat.telegramaz.ui.fragments.register.EnterPhoneNumberFragment
-import com.azat.telegramaz.utilits.initFireBase
+import com.azat.telegramaz.database.initFireBase
 import com.azat.telegramaz.utilits.replaceFragment
 
 class RegisterActivity : AppCompatActivity() {

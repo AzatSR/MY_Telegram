@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.azat.telegramaz.R
+import com.azat.telegramaz.database.updatePhonesToDatabase
 import com.azat.telegramaz.models.CommonModel
 import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat

@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import com.azat.telegramaz.MainActivity
 import com.azat.telegramaz.R
 import com.azat.telegramaz.activities.RegisterActivity
-import com.azat.telegramaz.utilits.AUTH
+import com.azat.telegramaz.database.AUTH
 import com.azat.telegramaz.utilits.replaceActivity
 import com.azat.telegramaz.utilits.replaceFragment
 import com.azat.telegramaz.utilits.showToast

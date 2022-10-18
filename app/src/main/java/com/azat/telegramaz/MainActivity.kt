@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import com.azat.telegramaz.activities.RegisterActivity
+import com.azat.telegramaz.database.AUTH
+import com.azat.telegramaz.database.initFireBase
+import com.azat.telegramaz.database.initUser
 import com.azat.telegramaz.databinding.ActivityMainBinding
 import com.azat.telegramaz.ui.fragments.MainFragment
 import com.azat.telegramaz.ui.objects.AppDrawer
