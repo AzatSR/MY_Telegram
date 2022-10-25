@@ -10,6 +10,7 @@
     <color name="grey">#E3E1E1</color>
     <color name="colorGrey">#7C7777</color>
     <color name="colorGreen">#B4EF73</color>
+    <color name="colorGreenDark">#4E8345</color>
     <color name="colorBlueWish">#48BAE6</color>
 
     <!-- Material DEFAULT colors -->

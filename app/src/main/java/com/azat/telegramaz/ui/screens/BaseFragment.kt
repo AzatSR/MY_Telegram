@@ -1,11 +1,6 @@
-package com.azat.telegramaz.ui.fragments
+package com.azat.telegramaz.ui.screens
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.azat.telegramaz.MainActivity
 import com.azat.telegramaz.utilits.APP_ACTIVITY
 
 open class BaseFragment(layout: Int) : Fragment(layout) {

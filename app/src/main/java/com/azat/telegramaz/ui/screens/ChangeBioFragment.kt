@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.fragments
+package com.azat.telegramaz.ui.screens
 
 import com.azat.telegramaz.R
 import com.azat.telegramaz.database.*

@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.fragments.message_recycler_view.views
+package com.azat.telegramaz.ui.message_recycler_view.views
 
 import com.azat.telegramaz.models.CommonModel
 import com.azat.telegramaz.utilits.TYPE_MESSAGE_IMAGE
@@ -9,6 +9,12 @@ class AppViewFactory {
         fun getView(message: CommonModel): MessageView {
             return when(message.type){
                 TYPE_MESSAGE_IMAGE -> ViewImageMessage(
+                    message.id,
+                    message.from,
+                    message.timeStamp.toString(),
+                    message.photoUrl
+                )
+                TYPE_MESSAGE_VOICE -> ViewVoiceMessage(
                     message.id,
                     message.from,
                     message.timeStamp.toString(),

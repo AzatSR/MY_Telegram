@@ -1,15 +1,16 @@
-package com.azat.telegramaz.ui.fragments.message_recycler_view.views
+package com.azat.telegramaz.ui.message_recycler_view.views
 
-class ViewTextMessage(
+data class ViewVoiceMessage(
     override val id: String,
     override val from: String,
     override val timeStamp: String,
-    override val fileUrl: String = "",
-    override val text: String
+    override val fileUrl: String,
+    override val text: String = ""
 ) : MessageView {
     override fun getTypeView(): Int {
-        return MessageView.MESSAGE_TEXT
+        return MessageView.MESSAGE_VOICE
     }
+
     override fun equals(other: Any?): Boolean {
         return (other as MessageView).id == id
     }

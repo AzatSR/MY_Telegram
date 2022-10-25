@@ -1,10 +1,9 @@
-package com.azat.telegramaz.ui.fragments
+package com.azat.telegramaz.ui.screens
 
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.fragment.app.Fragment
-import com.azat.telegramaz.MainActivity
 import com.azat.telegramaz.R
 import com.azat.telegramaz.utilits.APP_ACTIVITY
 import com.azat.telegramaz.utilits.hideKeyboard

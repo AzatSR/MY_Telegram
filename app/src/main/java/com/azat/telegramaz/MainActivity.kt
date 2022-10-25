@@ -11,7 +11,7 @@ import com.azat.telegramaz.database.AUTH
 import com.azat.telegramaz.database.initFireBase
 import com.azat.telegramaz.database.initUser
 import com.azat.telegramaz.databinding.ActivityMainBinding
-import com.azat.telegramaz.ui.fragments.MainFragment
+import com.azat.telegramaz.ui.screens.MainFragment
 import com.azat.telegramaz.ui.objects.AppDrawer
 import com.azat.telegramaz.utilits.*
 import kotlinx.coroutines.CoroutineScope

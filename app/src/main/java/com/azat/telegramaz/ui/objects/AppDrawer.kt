@@ -4,12 +4,10 @@ import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.view.View
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import com.azat.telegramaz.R
-import com.azat.telegramaz.ui.fragments.ContactsFragment
-import com.azat.telegramaz.ui.fragments.SettingsFragment
+import com.azat.telegramaz.ui.screens.ContactsFragment
+import com.azat.telegramaz.ui.screens.SettingsFragment
 import com.azat.telegramaz.utilits.APP_ACTIVITY
 import com.azat.telegramaz.database.USER
 import com.azat.telegramaz.utilits.downloadAndSetImage
