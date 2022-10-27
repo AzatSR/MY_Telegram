@@ -11,13 +11,17 @@ lateinit var REF_STORAGE_ROOT: StorageReference
 lateinit var USER: UserModel
 lateinit var CURRENT_UID: String
 const val TYPE_TEXT = "text"
+
 const val NODE_USERS = "users"
 const val NODE_USERNAMES = "usernames"
 const val NODE_PHONES = "phones"
 const val NODE_PHONES_CONTACTS = "phones_contacts"
 const val NODE_MESSAGES = "messages"
+const val NODE_MAIN_LIST = "main_list"
+
 const val FOLDER_PROFILE_IMAGE = "profile_image"
 const val FOLDER_FILES = "messages_files"
+
 const val CHILD_ID = "id"
 const val CHILD_PHONE = "phone"
 const val CHILD_USERNAME = "username"
