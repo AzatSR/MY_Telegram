@@ -1,7 +1,6 @@
 package com.azat.telegramaz.ui.screens.single_chat
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.view.*
@@ -11,14 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.azat.telegramaz.R
-import com.azat.telegramaz.activities.RegisterActivity
 import com.azat.telegramaz.database.*
 import com.azat.telegramaz.models.CommonModel
 import com.azat.telegramaz.models.UserModel
-import com.azat.telegramaz.ui.screens.BaseFragment
+import com.azat.telegramaz.ui.screens.base.BaseFragment
 import com.azat.telegramaz.ui.message_recycler_view.views.AppViewFactory
 import com.azat.telegramaz.ui.screens.main_list.MainListFragment
-import com.azat.telegramaz.ui.screens.settings.ChangeNameFragment
 import com.azat.telegramaz.utilits.*
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.database.DatabaseReference

@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.screens
+package com.azat.telegramaz.ui.screens.base
 
 import android.view.Menu
 import android.view.MenuInflater

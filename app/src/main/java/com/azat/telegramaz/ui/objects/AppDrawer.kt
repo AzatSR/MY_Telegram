@@ -6,10 +6,12 @@ import android.view.View
 import android.widget.ImageView
 import androidx.drawerlayout.widget.DrawerLayout
 import com.azat.telegramaz.R
-import com.azat.telegramaz.ui.screens.ContactsFragment
+import com.azat.telegramaz.ui.screens.contacts.ContactsFragment
 import com.azat.telegramaz.ui.screens.settings.SettingsFragment
 import com.azat.telegramaz.utilits.APP_ACTIVITY
 import com.azat.telegramaz.database.USER
+import com.azat.telegramaz.ui.screens.groups.AddContactsAdapter
+import com.azat.telegramaz.ui.screens.groups.AddContactsFragment
 import com.azat.telegramaz.utilits.downloadAndSetImage
 import com.azat.telegramaz.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader
@@ -123,12 +125,14 @@ class AppDrawer {
 
     private fun clickToItem(position: Int) {
         when (position) {
+            1 -> APP_ACTIVITY.replaceFragment(AddContactsFragment())
             7 -> APP_ACTIVITY.replaceFragment(SettingsFragment())
             4 -> APP_ACTIVITY.replaceFragment(ContactsFragment())
         }
     }
 
     private fun createHeader() {
+        /** Создание хедера */
         mCurrentProfile = ProfileDrawerItem()
             .withName(USER.fullname)
             .withEmail(USER.phone)

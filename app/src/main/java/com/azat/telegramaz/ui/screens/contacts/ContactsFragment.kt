@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.screens
+package com.azat.telegramaz.ui.screens.contacts
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.azat.telegramaz.R
 import com.azat.telegramaz.database.*
 import com.azat.telegramaz.models.CommonModel
+import com.azat.telegramaz.ui.screens.base.BaseFragment
 import com.azat.telegramaz.ui.screens.single_chat.SingleChatFragment
 import com.azat.telegramaz.utilits.*
 import com.firebase.ui.database.FirebaseRecyclerAdapter

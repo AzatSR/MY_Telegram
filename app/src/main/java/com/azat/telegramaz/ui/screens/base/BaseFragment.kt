@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.screens
+package com.azat.telegramaz.ui.screens.base
 
 import androidx.fragment.app.Fragment
 import com.azat.telegramaz.utilits.APP_ACTIVITY

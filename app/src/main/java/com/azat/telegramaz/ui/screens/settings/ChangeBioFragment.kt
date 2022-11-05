@@ -2,7 +2,7 @@ package com.azat.telegramaz.ui.screens.settings
 
 import com.azat.telegramaz.R
 import com.azat.telegramaz.database.*
-import com.azat.telegramaz.ui.screens.BaseChangeFragment
+import com.azat.telegramaz.ui.screens.base.BaseChangeFragment
 import com.azat.telegramaz.utilits.*
 import kotlinx.android.synthetic.main.fragment_change_bio.*
 
