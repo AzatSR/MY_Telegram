@@ -1,4 +1,4 @@
-package com.azat.telegramaz.ui.screens
+package com.azat.telegramaz.ui.screens.settings
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -8,6 +8,7 @@ import android.view.MenuItem
 import com.azat.telegramaz.R
 import com.azat.telegramaz.activities.RegisterActivity
 import com.azat.telegramaz.database.*
+import com.azat.telegramaz.ui.screens.BaseFragment
 import com.azat.telegramaz.utilits.*
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView

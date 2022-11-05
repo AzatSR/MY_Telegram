@@ -11,8 +11,9 @@ import com.azat.telegramaz.database.AUTH
 import com.azat.telegramaz.database.initFireBase
 import com.azat.telegramaz.database.initUser
 import com.azat.telegramaz.databinding.ActivityMainBinding
-import com.azat.telegramaz.ui.screens.MainFragment
+import com.azat.telegramaz.ui.screens.main_list.MainListFragment
 import com.azat.telegramaz.ui.objects.AppDrawer
+import com.azat.telegramaz.ui.screens.register.EnterPhoneNumberFragment
 import com.azat.telegramaz.utilits.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     private var test = "test"
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Функция запускается один раз при создании activity
+        /** Функция запускается один раз при создании activity */
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mBinding.root)
@@ -47,13 +48,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initFunc() {
-        // Функция инициализирует функциональность приложения
+        /** Функция инициализирует функциональность приложения */
         if (AUTH.currentUser != null) {
             setSupportActionBar(mToolbar)
             mAppDrawer.create()
-            replaceFragment(MainFragment(), false)
+            replaceFragment(MainListFragment(), false)
         } else {
-            replaceActivity(RegisterActivity())
+            replaceFragment(EnterPhoneNumberFragment(), false)
         }
     }
 

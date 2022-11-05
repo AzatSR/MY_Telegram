@@ -34,6 +34,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_settings.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragment_single_chat.xml" value="0.264" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/fragments_contacts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/main_list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/message_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/message_item_file.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/layout/message_item_image.xml" value="0.25416666666666665" />
@@ -43,6 +44,7 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/menu.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/settings_action_menu.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/settings_menu_confirm.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/TelegramAZ/app/src/main/res/menu/single_chat_action_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

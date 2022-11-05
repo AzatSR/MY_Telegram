@@ -4,19 +4,21 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import android.view.MotionEvent
-import android.view.View
+import android.view.*
 import android.widget.AbsListView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.azat.telegramaz.R
+import com.azat.telegramaz.activities.RegisterActivity
 import com.azat.telegramaz.database.*
 import com.azat.telegramaz.models.CommonModel
 import com.azat.telegramaz.models.UserModel
 import com.azat.telegramaz.ui.screens.BaseFragment
 import com.azat.telegramaz.ui.message_recycler_view.views.AppViewFactory
+import com.azat.telegramaz.ui.screens.main_list.MainListFragment
+import com.azat.telegramaz.ui.screens.settings.ChangeNameFragment
 import com.azat.telegramaz.utilits.*
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.database.DatabaseReference
@@ -60,6 +62,7 @@ class SingleChatFragment(private val contact: CommonModel) :
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initFields() {
+        setHasOptionsMenu(true)
         mBottomSheetBehavior = BottomSheetBehavior.from(bottom_sheet_choise)
         mBottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
         mAppVoiceRecorder = AppVoiceRecorder()
@@ -249,4 +252,25 @@ class SingleChatFragment(private val contact: CommonModel) :
         mAppVoiceRecorder.releaseRecorder()
         mAdapter.onDestroy()
     }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        /** Создание выпадающего меню */
+        activity?.menuInflater?.inflate(R.menu.single_chat_action_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        /** Слушатель выбора пунктов выпадающего меню */
+        when (item.itemId) {
+            R.id.menu_clear_chat -> clearChat(contact.id){
+                showToast("Чат очищен")
+                replaceFragment(MainListFragment())
+            }
+            R.id.menu_delete_chat -> deleteChat(contact.id){
+                showToast("Чат удален")
+                replaceFragment(MainListFragment())
+            }
+        }
+        return true
+    }
+
 }

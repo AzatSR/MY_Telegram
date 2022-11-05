@@ -7,7 +7,7 @@ import android.widget.ImageView
 import androidx.drawerlayout.widget.DrawerLayout
 import com.azat.telegramaz.R
 import com.azat.telegramaz.ui.screens.ContactsFragment
-import com.azat.telegramaz.ui.screens.SettingsFragment
+import com.azat.telegramaz.ui.screens.settings.SettingsFragment
 import com.azat.telegramaz.utilits.APP_ACTIVITY
 import com.azat.telegramaz.database.USER
 import com.azat.telegramaz.utilits.downloadAndSetImage
