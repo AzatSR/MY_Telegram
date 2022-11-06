@@ -5,14 +5,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.azat.telegramaz.R
 import com.azat.telegramaz.database.*
 import com.azat.telegramaz.models.CommonModel
-import com.azat.telegramaz.utilits.APP_ACTIVITY
-import com.azat.telegramaz.utilits.AppValueEventListener
-import com.azat.telegramaz.utilits.hideKeyboard
-import com.azat.telegramaz.utilits.replaceFragment
+import com.azat.telegramaz.ui.screens.base.BaseFragment
+import com.azat.telegramaz.utilits.*
 import kotlinx.android.synthetic.main.fragment_add_contacts.*
 import kotlinx.android.synthetic.main.fragment_main_list.*
 
-class AddContactsFragment : Fragment(R.layout.fragment_add_contacts) {
+/** Главный фрагмент,который содержит все чаты, груупы и каналы  с которым взаимодействует пользователь*/
+
+class AddContactsFragment : BaseFragment(R.layout.fragment_add_contacts) {
 
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: AddContactsAdapter
@@ -22,13 +22,14 @@ class AddContactsFragment : Fragment(R.layout.fragment_add_contacts) {
     private var mListItems = listOf<CommonModel>()
 
     override fun onResume() {
+        listContacts.clear()
         super.onResume()
         APP_ACTIVITY.title = "Добавить участника"
-        APP_ACTIVITY.mAppDrawer.enableDrawer()
         hideKeyboard()
         initRecyclerView()
         add_contacts_btn_next.setOnClickListener{
-            replaceFragment(CreateGroupFragment(listContacts))
+            if (listContacts.isEmpty()) showToast("Добавьте участника")
+            else replaceFragment(CreateGroupFragment(listContacts))
         }
     }
 

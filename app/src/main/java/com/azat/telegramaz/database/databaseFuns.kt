@@ -194,9 +194,48 @@ fun clearChat(id: String, function: () -> Unit) {
     REF_DATABASE_ROOT.child(NODE_MESSAGES).child(CURRENT_UID).child(id)
         .removeValue()
         .addOnFailureListener { showToast(it.message.toString()) }
-        .addOnSuccessListener { REF_DATABASE_ROOT.child(NODE_MESSAGES).child(id).child(CURRENT_UID)
-            .removeValue()
-            .addOnSuccessListener { function() }
+        .addOnSuccessListener {
+            REF_DATABASE_ROOT.child(NODE_MESSAGES).child(id).child(CURRENT_UID)
+                .removeValue()
+                .addOnSuccessListener { function() }
         }
         .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+fun createGroupToDatabase(
+    nameGroup: String,
+    uri: Uri,
+    listContacts: List<CommonModel>,
+    function: () -> Unit,
+) {
+    val keyGroup = REF_DATABASE_ROOT.child(NODE_GROUPS).push().key.toString()
+    val path = REF_DATABASE_ROOT.child(NODE_GROUPS).child(keyGroup)
+    val pathStorage = REF_STORAGE_ROOT.child(FOLDER_GROUPS_IMAGE).child(keyGroup)
+
+    val mapData = hashMapOf<String, Any>()
+    mapData[CHILD_ID] = keyGroup
+    mapData[CHILD_FULLNAME] = nameGroup
+
+    val mapMembers = hashMapOf<String, Any>()
+    listContacts.forEach {
+        mapMembers[it.id] = USER_MEMBER
+    }
+    mapMembers[CURRENT_UID] = USER_CREATOR
+
+    mapData[NODE_MEMBERS] = mapMembers
+
+    path.updateChildren(mapData)
+        .addOnSuccessListener {
+            function()
+            if (uri != Uri.EMPTY) {
+                putFileToStorage(uri, pathStorage) {
+                    getUrlFromStorage(pathStorage) {
+                        path.child(CHILD_FILE_URL).setValue(it)
+                    }
+                }
+            }
+        }
+        .addOnFailureListener { showToast(it.message.toString()) }
+
+
 }

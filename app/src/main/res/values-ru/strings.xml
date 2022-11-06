@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Telegram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Lena">Лена Щепкина</string>
+    <string name="Status">в сети</string>
+    <string name="settings_text_account">Аккаунт</string>
+    <string name="phone_number">+79008781212</string>
+    <string name="text_tint_for_change_phone_number">Нажмите, чтобы изменить номер телефона</string>
+    <string name="settings_login">Лена</string>
+    <string name="settings_label_login">Имя пользователя</string>
+    <string name="settings_menu_change_name">Изменить имя</string>
+    <string name="settings_menu_exit">Выход</string>
+    <string name="settings_default_bio">О себе</string>
+    <string name="settings_label_bio">Напишите о себе</string>
+    <string name="button_next">button_next</string>
+    <string name="cd_register_image">register_image</string>
+    <string name="register_text_enter">Введите код</string>
+    <string name="register_text_we_send">Мы отправили СМС с кодом проверки на ваш телефон</string>
+    <string name="register_hint_default">- - - - - -</string>
+    <string name="register_title_your_phone">Ваш телефон</string>
+    <string name="register_toast_enter_phone">Введите номер телефона</string>
+    <string name="edText_enter_number_hint">Введите номер</string>
+    <string name="settings_hint_input_name">Имя</string>
+    <string name="settings_hint_input_surname">Фамилия</string>
+    <string name="settings_toast_name_is_empty">Имя не может быть пустым</string>
+    <string name="toast_data_update">Данные обновлены</string>
+    <string name="settings_hint_input_username">username</string>
+    <string name="settings_input_bio">О себе</string>
+    <string name="clear_chat">Очистить чат</string>
+    <string name="delete_chat">Удалить чат</string>
+    <string name="create_group">Создать группу</string>
+
+    <plurals name="count_members">
+        <item quantity="one">%d участник</item>
+        <item quantity="few">%d участника</item>
+        <item quantity="many">%d участников</item>
+        <item quantity="other">%d участников</item>
+    </plurals>
+</resources>
